@@ -2,274 +2,311 @@
 (function () {
   const BUSINESS = {
     name: "Madni Care Center",
-    tagline: "Modern wellness products crafted with care.",
+    tagline: "Authentic Unani herbal remedies — Madni Dawakhana",
     audience: "Men & Women • Age 18+",
   };
+
+  const IMG = "assets/products";
 
   // Catalog amounts are stored in PKR (Pakistani Rupees).
   const BASE_PRODUCTS = [
     {
-      id: "majoon-classic",
-      name: "Majoon Classic",
-      short: "Traditional herbal blend for daily vitality.",
+      id: "majoon-sultani-jawahardar",
+      name: "Majoon Sultani Jawahardar",
+      short: "Premium royal majoon with saffron, amber & gold leaf.",
       description:
-        "Our classic Majoon is a balanced herbal formula designed for everyday wellness. Crafted with quality ingredients, small-batch prepared, and packaged fresh.",
-      price: 5600,
-      compareAt: 7000,
+        "معجون سلطانی جواہردار — a premium traditional majoon prepared with saffron, ambergris, musk, almonds, pistachios, silver & gold leaf, and honey. Formulated by Hakeem Ibn-e-Hakeem Hafiz Ali Jawad Akhtar. Take half a small spoon every 1–2 days at night with milk, about 1.5 hours after dinner.",
+      image: `${IMG}/majoon-sultani-jawahardar.png`,
+      price: 15000,
+      compareAt: 18000,
       category: "Herbal",
       subcategory: "Majoon",
-      strength: "Daily",
-      rating: 4.7,
-      reviewCount: 132,
-      tags: ["Bestseller", "No preservatives"],
+      strength: "Premium",
+      rating: 4.9,
+      reviewCount: 96,
+      tags: ["Bestseller", "Premium", "Royal formula"],
       reviews: [
-        { name: "Ayesha", stars: 5, text: "Clean taste and easy on the stomach. Felt better within a week." },
-        { name: "Bilal", stars: 4, text: "Good quality. Packaging was solid. Will reorder." },
-        { name: "Sana", stars: 5, text: "Consistent results and nice customer support." },
+        { name: "Hassan", stars: 5, text: "Hafiz g — loha paar ki cheez hai. Original quality." },
+        { name: "Omar", stars: 4, text: "Solid results. Delivery thori late thi lekin product acha hai." },
       ],
     },
     {
-      id: "majoon-premium",
-      name: "Majoon Premium",
-      short: "Upgraded blend with added adaptogens.",
+      id: "majoon-muqawwi-shahi-ambari",
+      name: "Majoon Muqawwi Shahi Ambari",
+      short: "Royal amber strengthening majoon for daily vitality.",
       description:
-        "Premium Majoon includes carefully selected herbs with adaptogenic support. Designed for busy schedules and sustained energy throughout the day.",
-      price: 8400,
-      compareAt: 9800,
+        "معجون مقوی شاہی عنبری — prepared from complete desi herbal ingredients. A strengthening royal formula. Take half a small spoon 1–2 times daily with milk or as directed on the label.",
+      image: `${IMG}/majoon-muqawwi-shahi-ambari.png`,
+      price: 12000,
+      compareAt: 14500,
       category: "Herbal",
       subcategory: "Majoon",
       strength: "Active",
       rating: 4.8,
-      reviewCount: 88,
-      tags: ["New", "Lab-tested"],
+      reviewCount: 74,
+      tags: ["Royal", "Strengthening"],
       reviews: [
-        { name: "Hassan", stars: 5, text: "goe hafiz g loha paar ki cheez hy ." },
-        { name: "Maryam", stars: 5, text: "Smooth, premium feel. Worth it but expensive"},
-        { name: "Omar", stars: 4, text: "Solid results, mgr delivery time is long but product achaa hy ." },
+        { name: "Bilal", stars: 5, text: "Quality packaging aur asar dono theek." },
+        { name: "Maryam", stars: 5, text: "Premium feel — worth the price." },
       ],
     },
     {
-      id: "majoon-lite",
-      name: "Majoon Lite",
-      short: "Gentle blend for beginners.",
+      id: "super-power-golden-capsule",
+      name: "Super Power Golden Capsule",
+      short: "Herbal capsules for strength, stamina & vitality.",
       description:
-        "A lighter formula built for first-time users. Gentle, easy to integrate into your routine, and ideal for those who prefer mild support.",
-      price: 4200,
-      compareAt: 5320,
+        "سپر پاور گولڈن کیپسول — supports male vitality, nervous strength, and overall stamina. Ingredients include clove, saffron, sandfish, castoreum, nutmeg, silver calx & orpiment. Take one capsule with lukewarm milk two hours after dinner.",
+      image: `${IMG}/super-power-golden-capsule.png`,
+      price: 5500,
+      compareAt: 6500,
       category: "Herbal",
-      subcategory: "Majoon",
-      strength: "Gentle",
-      rating: 4.5,
-      reviewCount: 54,
-      tags: ["Beginner-friendly", "Mild"],
+      subcategory: "Capsules",
+      strength: "Active",
+      rating: 4.8,
+      reviewCount: 112,
+      tags: ["Bestseller", "Golden capsules"],
       reviews: [
-        { name: "Nida", stars: 5, text: "Perfect starter. No heaviness." },
-        { name: "Saad", stars: 4, text: "Good mild formula. Will try Classic next." },
+        { name: "Ahmed", stars: 5, text: "Asar acha hai — regular use se farq para." },
+        { name: "Kamran", stars: 4, text: "Original lagta hai. Reorder karunga." },
       ],
     },
     {
-      id: "herbal-honey",
-      name: "Herbal Honey Blend",
-      short: "Raw honey infused with herbs.",
+      id: "hab-e-mumsik-jadeed",
+      name: "Hab-e-Mumsik Jadeed",
+      short: "Traditional herbal hab pills for male wellness.",
       description:
-        "A smooth honey blend infused with herbal extracts. Enjoy as a spoonful or mix into warm water (avoid boiling water).",
+        "حب ممسک جدید — classic herbal hab formulation in pill form. Follow label directions for dosage. Store in a cool, dry place.",
+      image: `${IMG}/hab-e-mumsik-jadeed.png`,
+      price: 4800,
+      compareAt: 5600,
+      category: "Herbal",
+      subcategory: "Hab",
+      strength: "Active",
+      rating: 4.7,
+      reviewCount: 68,
+      tags: ["Traditional", "Herbal hab"],
+      reviews: [{ name: "Saad", stars: 5, text: "Purana formula — asli cheez." }],
+    },
+    {
+      id: "habshi-tila-e-ant",
+      name: "Habshi Tila-e-Antishari",
+      short: "Medicated herbal oil — external use only.",
+      description:
+        "حبشی طلاء — medicated oil with mace, saffron, sandfish, musk, ambergris & olive oil. Apply 5 drops at night before sleep with gentle massage as directed. External use only.",
+      image: `${IMG}/habshi-tila-e-ant.png`,
+      price: 4500,
+      compareAt: 5200,
+      category: "Herbal",
+      subcategory: "Tila",
+      strength: "Active",
+      rating: 4.7,
+      reviewCount: 55,
+      tags: ["Tila", "External use"],
+      reviews: [{ name: "Naveed", stars: 5, text: "Quality oil — original feel." }],
+    },
+    {
+      id: "bichhoo-tila",
+      name: "Bichhoo Tila",
+      short: "Traditional medicated oil with herbal extracts.",
+      description:
+        "بچھو طلاء — medicated oil with aqarqarha, mace, red velvet mite, leech, earthworm, sandfish, olive oil & sweet oil. Apply 4–5 drops at night with light massage as directed on the label.",
+      image: `${IMG}/bichhoo-tila.png`,
+      price: 4500,
+      compareAt: 5200,
+      category: "Herbal",
+      subcategory: "Tila",
+      strength: "Active",
+      rating: 4.6,
+      reviewCount: 42,
+      tags: ["Tila", "External use"],
+      reviews: [{ name: "Raza", stars: 5, text: "Asli tila — packaging bhi achi." }],
+    },
+    {
+      id: "safoof-mughalliz-khas",
+      name: "Safoof-e-Mughalliz Khas",
+      short: "Special herbal powder — morning dose with milk.",
+      description:
+        "سفوف مغلظ خاص — prepared from complete desi herbal ingredients. Take one small spoon with milk on an empty stomach in the morning.",
+      image: `${IMG}/safoof-mughalliz-khas.png`,
+      price: 3800,
+      compareAt: 4500,
+      category: "Herbal",
+      subcategory: "Safoof",
+      strength: "Active",
+      rating: 4.7,
+      reviewCount: 58,
+      tags: ["Safoof", "Morning dose"],
+      reviews: [{ name: "Tariq", stars: 5, text: "Regular use se farq hai." }],
+    },
+    {
+      id: "safoof-sperm-mawallid-khas",
+      name: "Safoof Sperm o Mawallid Khas",
+      short: "Special safoof for reproductive wellness.",
+      description:
+        "سفوف سپرم و مولد خاص — herbal powder prepared from desi jari booti. Take half a spoon with milk on an empty stomach morning and evening.",
+      image: `${IMG}/safoof-sperm-mawallid-khas.png`,
+      price: 4200,
+      compareAt: 5000,
+      category: "Herbal",
+      subcategory: "Safoof",
+      strength: "Active",
+      rating: 4.7,
+      reviewCount: 47,
+      tags: ["Safoof", "Special formula"],
+      reviews: [{ name: "Imran", stars: 5, text: "Hakeem ka formula — trustworthy." }],
+    },
+    {
+      id: "taryaq-sugar-diabetes",
+      name: "Taryaq Sugar (Diabetes A)",
+      short: "Herbal powder support for blood sugar balance.",
+      description:
+        "تریاق شوگر (ذیابیطس A) — prepared from complete desi herbal plants. Follow label directions for daily use.",
+      image: `${IMG}/taryaq-sugar-diabetes.png`,
       price: 3500,
       compareAt: 4200,
-      category: "Honey",
-      subcategory: "Honey",
+      category: "Diabetes",
+      subcategory: "Safoof",
       strength: "Daily",
       rating: 4.6,
-      reviewCount: 61,
-      tags: ["Raw", "No additives"],
-      reviews: [
-        { name: "Zara", stars: 5, text: "Tastes amazing and feels soothing." },
-        { name: "Imran", stars: 4, text: "Great in warm water. Nice quality." },
-      ],
+      reviewCount: 63,
+      tags: ["Diabetes support", "Herbal"],
+      reviews: [{ name: "Farah", stars: 5, text: "Sugar control mein help milti hai." }],
     },
     {
-      id: "wellness-tea",
-      name: "Wellness Tea",
-      short: "Herbal tea for calm evenings.",
+      id: "control-sugar",
+      name: "Control Sugar (Diabetes)",
+      short: "Herbal powder for sugar management.",
       description:
-        "A calming tea blend featuring aromatic herbs. Perfect for evenings or whenever you want a gentle wind-down routine.",
+        "کنٹرول شوگر (ذیابیطس) — prepared from complete desi jari booti. Use as directed on the label.",
+      image: `${IMG}/control-sugar.png`,
+      price: 3500,
+      compareAt: 4200,
+      category: "Diabetes",
+      subcategory: "Safoof",
+      strength: "Daily",
+      rating: 4.6,
+      reviewCount: 51,
+      tags: ["Diabetes support", "Herbal"],
+      reviews: [{ name: "Asim", stars: 4, text: "Regular use ke sath sugar stable rehti hai." }],
+    },
+    {
+      id: "anti-pressure",
+      name: "Anti-Pressure (High BP)",
+      short: "Herbal powder for blood pressure support.",
+      description:
+        "Anti-Pressure — herbal powder prepared from desi ingredients for high blood pressure support. Follow label directions.",
+      image: `${IMG}/anti-pressure.png`,
+      price: 3500,
+      compareAt: 4200,
+      category: "Heart Health",
+      subcategory: "Safoof",
+      strength: "Daily",
+      rating: 4.5,
+      reviewCount: 38,
+      tags: ["BP support", "Herbal"],
+      reviews: [{ name: "Khalid", stars: 4, text: "BP readings better after regular use." }],
+    },
+    {
+      id: "arq-un-nisa-joint-pain",
+      name: "Arq-un-Nisa (Joint & Sciatica)",
+      short: "Capsules for joint pain and sciatica relief.",
+      description:
+        "عرق النساء وجع المفاصل — prepared from complete desi herbal ingredients. Take one capsule morning and evening after meals with tea or milk.",
+      image: `${IMG}/arq-un-nisa-joint-pain.png`,
+      price: 4200,
+      compareAt: 5000,
+      category: "Joint & Pain",
+      subcategory: "Capsules",
+      strength: "Active",
+      rating: 4.6,
+      reviewCount: 44,
+      tags: ["Joint pain", "Sciatica"],
+      reviews: [{ name: "Sana", stars: 5, text: "Ghrun mein aram mila — acha product." }],
+    },
+    {
+      id: "likoreen-capsules",
+      name: "Likoreen (Leucor) Capsules",
+      short: "Herbal capsules for women's wellness.",
+      description:
+        "لیکورین (لیکور) کیپسول — prepared from complete desi herbal ingredients. Take on an empty stomach morning and evening with lukewarm milk as directed.",
+      image: `${IMG}/likoreen-capsules.png`,
+      price: 4000,
+      compareAt: 4800,
+      category: "Women's Health",
+      subcategory: "Capsules",
+      strength: "Daily",
+      rating: 4.6,
+      reviewCount: 36,
+      tags: ["Women's health", "Herbal"],
+      reviews: [{ name: "Ayesha", stars: 5, text: "Effective aur gentle dono." }],
+    },
+    {
+      id: "likoreen-safoof",
+      name: "Likoreen Safoof",
+      short: "Herbal powder for women's wellness.",
+      description:
+        "لیکورین سفوف — prepared from complete desi herbal ingredients. Take one dose morning and evening on an empty stomach with lukewarm milk.",
+      image: `${IMG}/likoreen-safoof.png`,
+      price: 3200,
+      compareAt: 3800,
+      category: "Women's Health",
+      subcategory: "Safoof",
+      strength: "Daily",
+      rating: 4.5,
+      reviewCount: 29,
+      tags: ["Women's health", "Safoof"],
+      reviews: [{ name: "Nida", stars: 5, text: "Powder form convenient hai." }],
+    },
+    {
+      id: "aksir-e-maida",
+      name: "Aksir-e-Maida (Digestive Safoof)",
+      short: "Digestive herbal powder with ginger, fennel & ajwain.",
+      description:
+        "اکسیر معدہ (سفوف ہاضم) — digestive safoof with ginger, mint, fennel, turmeric, ajwain & more. Use as directed on the label.",
+      image: `${IMG}/aksir-e-maida.png`,
       price: 2800,
-      compareAt: 3640,
-      category: "Tea",
-      subcategory: "Tea",
-      strength: "Gentle",
-      rating: 4.4,
-      reviewCount: 39,
-      tags: ["Caffeine-free", "Relaxing"],
-      reviews: [
-        { name: "Farah", stars: 5, text: "Lovely aroma. Helps me unwind." },
-        { name: "Hamza", stars: 4, text: "Nice taste, good price." },
-      ],
-    },
-    {
-      id: "gift-box",
-      name: "Wellness Gift Box",
-      short: "Curated set for gifting.",
-      description:
-        "A curated gift set featuring customer favorites. Ideal for birthdays, holidays, or thoughtful gestures.",
-      price: 10920,
-      compareAt: 13720,
-      category: "Bundles",
-      subcategory: "Gift Sets",
-      strength: "Assorted",
-      rating: 4.9,
-      reviewCount: 27,
-      tags: ["Gift-ready", "Limited"],
-      reviews: [
-        { name: "Naveed", stars: 5, text: "Beautiful presentation. Great gift." },
-        { name: "Hira", stars: 5, text: "My family loved it!" },
-      ],
-    },
-    {
-      id: "aswagandha-powder",
-      name: "Aswagandha Powder",
-      short: "Herbal powder for balanced daily support.",
-      description:
-        "Finely milled aswagandha powder sourced for quality. Mix into milk/smoothies or as advised on the label.",
-      price: 2240,
-      compareAt: 2800,
-      category: "Herbal Items",
-      subcategory: "Powders",
+      compareAt: 3400,
+      category: "Digestive",
+      subcategory: "Safoof",
       strength: "Daily",
       rating: 4.6,
       reviewCount: 41,
-      tags: ["Pansar store", "Fine powder"],
-      reviews: [
-        { name: "Rimsha", stars: 5, text: "Good quality powder. Fresh smell." },
-        { name: "Usman", stars: 4, text: "Works well in warm milk." },
-      ],
+      tags: ["Digestion", "Safoof"],
+      reviews: [{ name: "Hina", stars: 5, text: "Hazma theek rehta hai is se." }],
     },
     {
-      id: "kalonji-seeds",
-      name: "Kalonji (Black Seed)",
-      short: "Premium whole black seeds.",
+      id: "akseer-bawaseer-capsules",
+      name: "Akseer-e-Bawaseer Capsules",
+      short: "Herbal capsules for hemorrhoid relief.",
       description:
-        "Cleaned and packed kalonji seeds. Use in meals or as part of your routine. Store in a cool, dry place.",
-      price: 1260,
-      compareAt: 1540,
-      category: "Herbal Items",
-      subcategory: "Seeds",
-      strength: "Daily",
-      rating: 4.7,
-      reviewCount: 66,
-      tags: ["Pure", "Whole seeds"],
-      reviews: [
-        { name: "Arslan", stars: 5, text: "Fresh and clean. Great value." },
-        { name: "Mehak", stars: 4, text: "Good packaging and quality." },
-      ],
-    },
-    {
-      id: "saunf-fennel",
-      name: "Saunf (Fennel Seeds)",
-      short: "Aromatic fennel seeds for after meals.",
-      description:
-        "Sweet, aromatic fennel seeds. Commonly used after meals and in herbal mixes. Packed for freshness.",
-      price: 1050,
-      compareAt: 1260,
-      category: "Herbal Items",
-      subcategory: "Seeds",
-      strength: "Gentle",
+        "اکسیر بواسیر (کپسول) — prepared from complete desi herbal ingredients. Take one capsule morning and evening with water after meals.",
+      image: `${IMG}/akseer-bawaseer-capsules.png`,
+      price: 4000,
+      compareAt: 4800,
+      category: "Digestive",
+      subcategory: "Capsules",
+      strength: "Active",
       rating: 4.5,
-      reviewCount: 28,
-      tags: ["Aromatic", "Fresh pack"],
-      reviews: [
-        { name: "Noor", stars: 5, text: "Very fragrant. I use it daily." },
-        { name: "Danish", stars: 4, text: "Nice taste and quality." },
-      ],
-    },
-    {
-      id: "mulethi-stick",
-      name: "Mulethi (Licorice) Sticks",
-      short: "Natural mulethi sticks (select grade).",
-      description:
-        "Carefully selected mulethi sticks. Traditionally used in herbal routines. Keep sealed after opening.",
-      price: 1680,
-      compareAt: 2100,
-      category: "Herbal Items",
-      subcategory: "Herbs",
-      strength: "Gentle",
-      rating: 4.6,
       reviewCount: 33,
-      tags: ["Select grade", "Natural"],
-      reviews: [
-        { name: "Sadia", stars: 5, text: "Good sticks, not dusty. Fresh." },
-        { name: "Waqas", stars: 4, text: "Solid quality. Will buy again." },
-      ],
+      tags: ["Digestive", "Capsules"],
+      reviews: [{ name: "Waqas", stars: 4, text: "Relief mila — recommended." }],
     },
     {
-      id: "senna-leaves",
-      name: "Senna Leaves (Sana Makki)",
-      short: "Dried senna leaves (herbal item).",
+      id: "herbal-majoon-jar",
+      name: "Herbal Majoon (Jar)",
+      short: "Traditional herbal majoon in glass jar with spoon.",
       description:
-        "Dried senna leaves, packed clean. Use responsibly and follow label directions.",
-      price: 1400,
-      compareAt: 1680,
-      category: "Herbal Items",
-      subcategory: "Herbs",
-      strength: "Active",
-      rating: 4.4,
-      reviewCount: 19,
-      tags: ["Herbal item", "Packed clean"],
-      reviews: [{ name: "Hina", stars: 4, text: "Clean leaves, arrived on time." }],
-    },
-    {
-      id: "olive-oil",
-      name: "Olive Oil (Cold Pressed)",
-      short: "Cold pressed oil for daily use.",
-      description:
-        "Cold pressed olive oil. Suitable for cooking and everyday wellness routines. Store away from heat/light.",
-      image: "images/olive-oil.png",
-      price: 3080,
-      compareAt: 3640,
-      category: "Oils",
-      subcategory: "Oils",
+        "Traditional herbal majoon packed fresh in a glass jar with cork seal and wooden spoon. Small-batch prepared at Madni Dawakhana.",
+      image: `${IMG}/herbal-majoon-jar.png`,
+      price: 6500,
+      compareAt: 7800,
+      category: "Herbal",
+      subcategory: "Majoon",
       strength: "Daily",
-      rating: 4.6,
-      reviewCount: 22,
-      tags: ["Cold pressed", "Pure"],
-      reviews: [
-        { name: "Adeel", stars: 5, text: "Nice taste and good quality." },
-        { name: "Maham", stars: 4, text: "Good packaging." },
-      ],
-    },
-    {
-      id: "black-seed-oil",
-      name: "Black Seed Oil",
-      short: "Pure kalonji oil (cold pressed).",
-      description:
-        "Cold pressed black seed oil. Packed in a dark bottle to help preserve quality.",
-      price: 3220,
-      compareAt: 3920,
-      category: "Oils",
-      subcategory: "Oils",
-      strength: "Active",
       rating: 4.7,
-      reviewCount: 31,
-      tags: ["Cold pressed", "Dark bottle"],
-      reviews: [
-        { name: "Raza", stars: 5, text: "Strong aroma, feels authentic." },
-        { name: "Iqra", stars: 4, text: "Good oil, arrived sealed." },
-      ],
-    },
-    {
-      id: "ajwain",
-      name: "Ajwain (Carom Seeds)",
-      short: "Strong aromatic ajwain seeds.",
-      description:
-        "Fresh ajwain seeds, commonly used in meals and herbal mixes. Keep tightly sealed for aroma.",
-      price: 910,
-      compareAt: 1120,
-      category: "Herbal Items",
-      subcategory: "Seeds",
-      strength: "Active",
-      rating: 4.5,
-      reviewCount: 24,
-      tags: ["Aromatic", "Fresh"],
-      reviews: [{ name: "Sohail", stars: 5, text: "Very aromatic. Good quality." }],
+      reviewCount: 52,
+      tags: ["Jar pack", "Traditional"],
+      reviews: [{ name: "Danish", stars: 5, text: "Fresh aur achi packaging." }],
     },
     /* --- Pansar store (regular dry goods; same gradient-style card images as other products) --- */
     {
@@ -400,6 +437,7 @@
           reviewCount: typeof p.reviewCount === "number" ? p.reviewCount : 0,
           tags: Array.isArray(p.tags) ? p.tags.filter((t) => typeof t === "string") : [],
           reviews: Array.isArray(p.reviews) ? p.reviews : [],
+          image: typeof p.image === "string" ? p.image : "",
         }))
         .filter((p) => Number.isFinite(p.price) && p.price >= 0);
     } catch {
@@ -687,6 +725,44 @@
     return `<span class="stars" aria-label="Rating ${full} out of 5">${icons.join("")}</span>`;
   }
 
+  function initMobileNav() {
+    qsa(".nav").forEach((nav) => {
+      if (nav.querySelector(".nav-toggle")) return;
+      const links = nav.querySelector(".nav-links");
+      if (!links) return;
+
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "nav-toggle";
+      btn.setAttribute("aria-expanded", "false");
+      btn.setAttribute("aria-label", "Open menu");
+      btn.innerHTML =
+        '<span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>';
+      nav.insertBefore(btn, links);
+
+      const close = () => {
+        links.classList.remove("is-open");
+        nav.classList.remove("nav-open");
+        btn.setAttribute("aria-expanded", "false");
+        btn.setAttribute("aria-label", "Open menu");
+      };
+
+      btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        const open = !links.classList.contains("is-open");
+        links.classList.toggle("is-open", open);
+        nav.classList.toggle("nav-open", open);
+        btn.setAttribute("aria-expanded", open ? "true" : "false");
+        btn.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+      });
+
+      links.querySelectorAll("a").forEach((a) => a.addEventListener("click", close));
+      document.addEventListener("click", (e) => {
+        if (!nav.contains(e.target)) close();
+      });
+    });
+  }
+
   // --- Page init ---
   document.addEventListener("DOMContentLoaded", async () => {
     // Fill business placeholders
@@ -700,6 +776,8 @@
       if (a.dataset.nav === page) a.setAttribute("aria-current", "page");
     });
 
+    initMobileNav();
+
     await initBackendSync();
 
     updateCartCount();
@@ -708,6 +786,8 @@
     document.body.addEventListener("click", (e) => {
       const btn = e.target.closest("[data-add]");
       if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
       const id = btn.getAttribute("data-add");
       addToCart(id, 1);
     });
@@ -730,7 +810,7 @@
       const featured = PRODUCTS.slice()
         .sort((a, b) => (b.rating - a.rating) || (b.reviewCount - a.reviewCount))
         .slice(0, 6);
-      featuredMount.innerHTML = featured.map((p) => productCard(p, { featured: true })).join("");
+      featuredMount.innerHTML = featured.map((p) => productCard(p)).join("");
     }
 
     const pansarMount = qs("#pansarGrid");
@@ -739,7 +819,7 @@
         .slice()
         .sort((a, b) => (b.rating - a.rating) || (b.reviewCount - a.reviewCount))
         .slice(0, 6);
-      pansarMount.innerHTML = pansarItems.map((p) => productCard(p, { pansar: true })).join("");
+      pansarMount.innerHTML = pansarItems.map((p) => productCard(p)).join("");
     }
 
     // Category tiles (deep-link into products page)
@@ -774,8 +854,8 @@
       })
         .slice()
         .sort((a, b) => (b.rating - a.rating) || (b.reviewCount - a.reviewCount))
-        .slice(0, 3);
-      remediesMount.innerHTML = curated.map(productCard).join("");
+        .slice(0, 6);
+      remediesMount.innerHTML = curated.map((p) => productCard(p)).join("");
     }
 
     // Recent posts (placeholder cards)
@@ -790,8 +870,8 @@
         .slice(0, 3)
         .map(
           (p) => `
-          <article class="card pad product col-4 col-6 col-lg-4" style="overflow:hidden;">
-            <div class="img" style="aspect-ratio: 16/10; background-image: var(--cover-image); background-size: cover; background-position: var(--cover-position);"></div>
+          <article class="card product store-card" style="overflow:hidden;">
+            <div class="img" style="aspect-ratio: 1/1; background-image: var(--cover-image); background-size: contain; background-repeat: no-repeat; background-position: center; background-color: rgba(251,246,234,.92);"></div>
             <div class="meta">
               <div class="row" style="gap:4px;">
                 <span class="chip">${escapeXml(p.tag)}</span>
@@ -882,7 +962,7 @@
       if (s === "price-desc") list.sort((a, b) => priceFor(b) - priceFor(a));
       if (s === "rating") list.sort((a, b) => b.rating - a.rating);
 
-      mount.innerHTML = list.map((p) => productCard(p, { shop: true })).join("");
+      mount.innerHTML = list.map((p) => productCard(p)).join("");
       const count = qs("#resultsCount");
       if (count) count.textContent = `${list.length} product${list.length === 1 ? "" : "s"}`;
     }
@@ -914,7 +994,7 @@
     const effectiveCompare = compareFor(product);
 
     mount.innerHTML = `
-      <div class="two-col">
+      <div class="two-col product-detail">
         <div class="card product">
           <div class="img">
             <img alt="${escapeXml(product.name)}" src="${productImageUrl(product)}"/>
@@ -922,16 +1002,15 @@
         </div>
         <div class="stack">
           <div class="card pad">
-            <div class="row" style="gap:4px; align-items:flex-start;">
-              <div class="stack" style="gap:4px;">
-                <h1 style="margin:0; line-height:1.15; letter-spacing:-0.4px;">${escapeXml(product.name)}</h1>
-                <div class="row" style="gap:4px;">${chips}</div>
-                <div class="row" style="gap:4px;">${ratingRow}</div>
+            <div class="row" style="gap:8px; align-items:flex-start; flex-wrap:wrap;">
+              <div class="stack" style="gap:6px; flex:1 1 220px; min-width:0;">
+                <h1 style="margin:0; line-height:1.15; letter-spacing:-0.4px; font-size:clamp(1.35rem, 5vw, 1.85rem);">${escapeXml(product.name)}</h1>
+                <div class="row" style="gap:4px; flex-wrap:wrap;">${chips}</div>
+                <div class="row" style="gap:4px; flex-wrap:wrap;">${ratingRow}</div>
               </div>
-              <div class="spacer"></div>
-              <div class="stack" style="gap:4px; min-width: 220px;">
-                <div class="row" style="justify-content:flex-end;">
-                  <div class="price" style="font-size:20px;">${money(effectivePrice)}</div>
+              <div class="stack buy-box" style="gap:8px; flex:1 1 200px;">
+                <div class="row" style="justify-content:flex-start; gap:10px; flex-wrap:wrap;">
+                  <div class="price" style="font-size:clamp(1.15rem, 4.5vw, 1.35rem);">${money(effectivePrice)}</div>
                   <div class="old-price">${money(effectiveCompare)}</div>
                 </div>
                 <button class="btn primary" data-add="${escapeXml(product.id)}">Add to cart</button>
@@ -968,8 +1047,8 @@
 
     const more = qs("#moreGrid");
     if (more) {
-      const also = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 3);
-      more.innerHTML = also.map(productCard).join("");
+      const also = PRODUCTS.filter((p) => p.id !== product.id).slice(0, 6);
+      more.innerHTML = also.map((p) => productCard(p)).join("");
     }
   }
 
@@ -1001,6 +1080,7 @@
         <div class="two-col">
           <div class="card pad">
             <h2 style="margin:0 0 10px;">Cart items</h2>
+            <div class="table-wrap">
             <table class="table" aria-label="Cart table">
               <thead>
                 <tr>
@@ -1018,7 +1098,7 @@
                   <tr>
                     <td>
                       <div class="row" style="align-items:flex-start;">
-                        <img src="${productImageUrl(l.product)}" alt="" width="64" height="44" style="border-radius:12px; border:1px solid rgba(255,255,255,.14); object-fit:cover;" />
+                        <img src="${productImageUrl(l.product)}" alt="" width="64" height="64" style="border-radius:12px; border:1px solid rgba(23,59,45,.12); object-fit:contain; background:rgba(251,246,234,.9); flex-shrink:0;" />
                         <div class="stack" style="gap:4px;">
                           <div style="font-weight:800; letter-spacing:-0.2px;">${escapeXml(l.product.name)}</div>
                           <div class="muted" style="font-size:12px;">${escapeXml(l.product.short)}</div>
@@ -1042,7 +1122,8 @@
                   .join("")}
               </tbody>
             </table>
-            <div class="row" style="margin-top:4px;">
+            </div>
+            <div class="row" style="margin-top:8px;">
               <button class="btn" id="clearCart">Clear cart</button>
               <div class="spacer"></div>
               <a class="btn" href="products.html">Continue shopping</a>
@@ -1223,20 +1304,12 @@
     });
   }
 
-  function productCard(p, opts = {}) {
+  function productCard(p) {
     const chips = p.tags.slice(0, 2).map((t) => `<span class="chip">${escapeXml(t)}</span>`).join(" ");
     const effectivePrice = priceFor(p);
     const effectiveCompare = compareFor(p);
-    /* Top Sellers / Shop: custom grid only — no Bootstrap col-* (see .topseller-card / .shop-card in styles.css) */
-    const cardClass = opts.featured
-      ? "card product topseller-card"
-      : opts.shop
-        ? "card product shop-card"
-        : opts.pansar
-          ? "card product pansar-card"
-          : "card product col-4 col-6 col-lg-4";
     return `
-      <article class="${cardClass}">
+      <article class="card product store-card">
         <a href="product.html?id=${encodeURIComponent(p.id)}" style="display:block;">
           <div class="img">
             <img alt="${escapeXml(p.name)}" src="${productImageUrl(p)}" loading="lazy"/>
@@ -1248,7 +1321,7 @@
               ${renderStars(p.rating)}
             </div>
             <p class="desc">${escapeXml(p.short)}</p>
-            <div class="row" style="gap:4px; margin-top:4px;">${chips}</div>
+            <div class="chip-row">${chips}</div>
             <div class="price-row">
               <div class="price">${money(effectivePrice)}</div>
               <div class="old-price">${money(effectiveCompare)}</div>

@@ -378,17 +378,8 @@ while ($listener.IsListening) {
     # Short URLs (no .html) — many users type /admin and get 404 otherwise
     if ($path -eq "/admin") { $path = "/admin.html" }
 
-    # React/Vite uses root index.html; :8080 is mainly API + legacy static pages.
-    # Serve the old multi-page home so http://localhost:8080/ is usable without Vite.
-    if ($path -eq "/" -or $path -eq "/index.html") {
-      $legacyHome = Join-Path $Root "static-site-index.html"
-      if (Test-Path $legacyHome) {
-        $path = "/static-site-index.html"
-      }
-      else {
-        $path = "/index.html"
-      }
-    }
+    # Serve homepage at / and /index.html
+    if ($path -eq "/") { $path = "/index.html" }
 
     $filePath = Join-Path $Root ($path.TrimStart("/").Replace("/", "\"))
     if (!(Test-Path $filePath) -or (Test-Path $filePath -PathType Container)) {
