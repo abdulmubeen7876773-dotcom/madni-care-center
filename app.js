@@ -7,6 +7,7 @@
   };
 
   const IMG = "assets/products";
+  const IMG_PANSAR = "assets/products/pansar";
 
   // Catalog amounts are stored in PKR (Pakistani Rupees).
   const BASE_PRODUCTS = [
@@ -315,6 +316,7 @@
       short: "Clean ground turmeric for daily use.",
       description:
         "Finely ground haldi for cooking and traditional use. Store in an airtight jar away from moisture.",
+      image: `${IMG_PANSAR}/haldi-powder.jpg`,
       price: 480,
       compareAt: 620,
       category: "Pansar Store",
@@ -334,6 +336,7 @@
       short: "Aromatic dry ginger powder.",
       description:
         "Dry ginger (sonth) powder for warm drinks and cooking. Keep sealed to preserve aroma.",
+      image: `${IMG_PANSAR}/sonth-powder.jpg`,
       price: 520,
       compareAt: 650,
       category: "Pansar Store",
@@ -350,6 +353,7 @@
       short: "Traditional jaggery block / pieces.",
       description:
         "Natural-style gur for tea and traditional recipes. Break as needed; store cool and dry.",
+      image: `${IMG_PANSAR}/desi-gur.jpg`,
       price: 380,
       compareAt: 480,
       category: "Pansar Store",
@@ -368,6 +372,7 @@
       short: "Crystal mishri for tea and mouth freshness.",
       description:
         "Clean mishri crystals. Popular for kadha-style drinks and light sweetness.",
+      image: `${IMG_PANSAR}/mishri.jpg`,
       price: 290,
       compareAt: 380,
       category: "Pansar Store",
@@ -384,6 +389,7 @@
       short: "Whole fennel seeds, daily pack.",
       description:
         "Whole aromatic saunf for after-meals and home mixes. Same quality line as our herbal saunf listing.",
+      image: `${IMG_PANSAR}/saunf-seeds.jpg`,
       price: 340,
       compareAt: 420,
       category: "Pansar Store",
@@ -400,6 +406,7 @@
       short: "Powdered black salt for chaat &amp; drinks.",
       description:
         "Finely ground kala namak for raita, fruit chaat, and jaljeera-style drinks.",
+      image: `${IMG_PANSAR}/kala-namak.jpg`,
       price: 220,
       compareAt: 280,
       category: "Pansar Store",
@@ -1323,9 +1330,10 @@
             <p class="desc">${escapeXml(p.short)}</p>
             <div class="chip-row">${chips}</div>
             <div class="price-row">
-              <div class="price">${money(effectivePrice)}</div>
-              <div class="old-price">${money(effectiveCompare)}</div>
-              <div class="spacer"></div>
+              <div class="price-block">
+                <div class="price">${money(effectivePrice)}</div>
+                <div class="old-price">${money(effectiveCompare)}</div>
+              </div>
               <button class="btn primary small" type="button" data-add="${escapeXml(p.id)}">Add</button>
             </div>
           </div>
