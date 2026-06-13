@@ -1,6 +1,6 @@
+# Static HTML site (index.html, app.js, styles.css, assets/) — no Vite build.
 [build]
-  command = "npm run build"
-  publish = "dist"
+  publish = "."
 
 [build.environment]
   NODE_VERSION = "20"
